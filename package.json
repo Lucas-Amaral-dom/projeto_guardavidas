@@ -1,0 +1,41 @@
+{
+  "name": "guarda-vidas-completo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "5.0.1",
+    "react-webcam": "^7.2.0",
+    "recharts": "^3.8.1",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./src/index.css --content ./src/**/*.{js,jsx} ./public/index.html",
+    "prestart": "npm run build:css",
+    "start": "react-scripts start",
+    "prebuild": "npm run build:css",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "postcss-loader": "^8.2.1",
+    "tailwindcss": "^3.4.19"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
